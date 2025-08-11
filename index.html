@@ -1,304 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Teko — AI & Automation That Wins You Customers</title>
-  <meta name="description" content="Teko builds AI-powered automation systems that capture every enquiry, follow up 24/7, and book customers — without hiring more staff." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          teko: {
-            green: '#085445',
-            greenDark: '#063E33',   // a slightly darker shade for gradients
-            cream: '#EADBC8',
-            mint: '#CDE5D2'
-          }
-        },
-        fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] }
-      }
-    }
-  }
-</script>
-  <meta property="og:title" content="Teko — AI & Automation That Wins You Customers" />
-  <meta property="og:description" content="We build AI systems that turn more enquiries into bookings, 24/7." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://teko.tools" />
-  <meta property="og:image" content="/og-teko.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Teko",
-    "url": "https://teko.tools",
-    "logo": "https://teko.tools/teko-logo-green.png",
-    "sameAs": []
-  }
-  </script>
- <style>
-  :root{ --bg:#085445; --bg-d:#063E33; --accent:#EADBC8; --mint:#CDE5D2 }
-  .shadow-soft{ box-shadow: 0 10px 30px rgba(0,0,0,.12); }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teko Tools</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-white text-slate-900 font-sans">
-  <!-- Top bar -->
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/80 border-b border-slate-100">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center gap-6">
-      <a href="#home" class="flex items-center gap-2">
-       <img src="/teko-logo-green.png" alt="Teko" class="h-8 w-auto" />
-<span class="sr-only">Teko</span>
+<body>
+
+  <!-- Hero Section -->
+  <section class="bg-[#085445] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-20 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">Automate Your Business, Effortlessly</h1>
+      <p class="mt-4 max-w-2xl mx-auto">
+        Let Teko Tools streamline your workflow and boost productivity with smart automations.
+      </p>
+      <a href="#booking" 
+         class="mt-6 inline-block px-6 py-3 rounded-xl font-semibold text-[#085445] bg-[#eadbc8] hover:bg-[#d6c4b5] transition">
+        Book a Free Strategy Call
       </a>
-      <nav class="ml-auto hidden md:flex items-center gap-6 text-sm">
-        <a href="#services" class="hover:opacity-80">Services</a>
-        <a href="#how" class="hover:opacity-80">How it works</a>
-        <a href="#pricing" class="hover:opacity-80">Pricing</a>
-        <a href="#demo" class="hover:opacity-80">Live demo</a>
-        <a href="#contact" class="hover:opacity-80">Contact</a>
-        <a href="#booking" class="px-3 py-2 rounded-lg text-white" style="background:var(--bg)">Book a demo</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section id="home" class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10" style="background:linear-gradient(180deg, var(--bg), var(--bg-d))"></div>
-    <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 items-center gap-12 text-white">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Automations that win you customers — without hiring more staff</h1>
-        <p class="mt-4 text-lg/relaxed text-white/90">Teko builds AI-powered systems that capture every enquiry, follow up 24/7, and book appointments automatically. You get more sales and fewer busywork hours.</p>
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#booking" class="px-5 py-3 rounded-xl text-slate-900 font-semibold" style="background:var(--accent)">Book a free demo</a>
-          <a href="#demo" class="px-5 py-3 rounded-xl border border-white/30 hover:bg-white/10">See live demo</a>
-        </div>
-        <p class="mt-4 text-white/70 text-sm">Set up in days, not months. Works on your website, WhatsApp, Instagram, and Facebook.</p>
-      </div>
-      <div>
-        <div class="bg-white rounded-2xl p-4 md:p-6 shadow-soft">
-          <div class="rounded-xl overflow-hidden border border-slate-100">
-            <video class="w-full h-auto" autoplay muted loop playsinline poster="/poster.jpg" aria-label="Automation demo">
-              <source src="/demo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <p class="text-sm text-slate-600 mt-3">Demo: a lead asks a question → receives instant answers → books a slot in 20 seconds.</p>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- Trust badges -->
-  <section class="bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-      <div class="p-4"><p class="text-2xl font-bold" style="color:var(--bg)">24/7</p><p class="text-slate-600 text-sm">Lead capture</p></div>
-      <div class="p-4"><p class="text-2xl font-bold" style="color:var(--bg)">+30%</p><p class="text-slate-600 text-sm">More conversions*</p></div>
-      <div class="p-4"><p class="text-2xl font-bold" style="color:var(--bg)">-20 hrs</p><p class="text-slate-600 text-sm">Admin saved monthly*</p></div>
-      <div class="p-4"><p class="text-2xl font-bold" style="color:var(--bg)">5–15 mins</p><p class="text-slate-600 text-sm">Install time per channel</p></div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-3xl md:text-4xl font-bold">What you get</h2>
-    <p class="mt-3 text-slate-600 max-w-2xl">A complete revenue and efficiency system. Not just a chatbot.</p>
-
-    <div class="mt-10 grid md:grid-cols-3 gap-6">
-      <div class="p-6 rounded-2xl border border-slate-200">
-        <h3 class="font-semibold text-lg">AI Lead Capture & Follow‑up</h3>
-        <p class="mt-2 text-slate-600">Instantly answers enquiries, qualifies leads, and books directly into your calendar across website, WhatsApp, Instagram, and Facebook.</p>
-      </div>
-      <div class="p-6 rounded-2xl border border-slate-200">
-        <h3 class="font-semibold text-lg">Pipeline & Booking Automation</h3>
-        <p class="mt-2 text-slate-600">Every lead drops into your CRM with automated SMS/email nudges until they convert or opt out.</p>
-      </div>
-      <div class="p-6 rounded-2xl border border-slate-200">
-        <h3 class="font-semibold text-lg">Review & Reputation Engine</h3>
-        <p class="mt-2 text-slate-600">Auto-requests reviews after service and replies to new reviews with brand-safe responses.</p>
-      </div>
-      <div class="p-6 rounded-2xl border border-slate-200">
-        <h3 class="font-semibold text-lg">Content & Email Drips</h3>
-        <p class="mt-2 text-slate-600">Keeps your brand visible with AI-created posts and simple newsletters tailored to your niche.</p>
-      </div>
-      <div class="p-6 rounded-2xl border border-slate-200">
-        <h3 class="font-semibold text-lg">Reporting that Matters</h3>
-        <p class="mt-2 text-slate-600">See leads, bookings, and revenue attributed to automation. No vanity metrics.</p>
-      </div>
-      <div class="p-6 rounded-2xl border border-slate-200">
-        <h3 class="font-semibold text-lg">Done‑for‑You Support</h3>
-        <p class="mt-2 text-slate-600">We maintain, monitor, and improve monthly so you never touch the tech.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- How it works -->
-  <section id="how" class="bg-slate-50">
+  <!-- Features Section -->
+  <section id="features" class="bg-slate-50">
     <div class="max-w-6xl mx-auto px-4 py-16">
-      <h2 class="text-3xl md:text-4xl font-bold">How it works</h2>
-      <div class="mt-10 grid md:grid-cols-3 gap-6">
-        <div class="p-6 rounded-2xl bg-white border border-slate-200">
-          <span class="text-sm font-semibold px-2 py-1 rounded-full" style="background:var(--mint)">Step 1</span>
-          <h3 class="mt-3 font-semibold text-lg">Audit</h3>
-          <p class="mt-2 text-slate-600">We map your lead flow, bottlenecks, and quick wins in a 45‑minute call.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-white border border-slate-200">
-          <span class="text-sm font-semibold px-2 py-1 rounded-full" style="background:var(--mint)">Step 2</span>
-          <h3 class="mt-3 font-semibold text-lg">Build</h3>
-          <p class="mt-2 text-slate-600">We install your automation stack, connect calendars/CRMs, and script high‑converting flows.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-white border border-slate-200">
-          <span class="text-sm font-semibold px-2 py-1 rounded-full" style="background:var(--mint)">Step 3</span>
-          <h3 class="mt-3 font-semibold text-lg">Optimise</h3>
-          <p class="mt-2 text-slate-600">We monitor performance, add seasonal promos, and keep improving every month.</p>
-        </div>
-      </div>
+      <h2 class="text-3xl md:text-4xl font-bold">Our Services</h2>
+      <p class="mt-3 text-slate-600 max-w-2xl">
+        We create custom automation solutions to save you time and scale your operations.
+      </p>
+      <!-- Feature cards go here -->
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section id="pricing" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-3xl md:text-4xl font-bold">Simple pricing</h2>
-    <p class="mt-3 text-slate-600 max-w-2xl">One‑time setup gets you live fast. Monthly covers support and ongoing improvements.</p>
-
-    <div class="mt-10 grid md:grid-cols-3 gap-6">
-      <!-- Starter -->
-      <div class="p-6 rounded-2xl border border-slate-200">
-        <h3 class="font-semibold text-lg">Starter</h3>
-        <p class="mt-2 text-slate-600">For trying automation on one channel.</p>
-        <p class="mt-6 text-3xl font-bold">£495<span class="text-base font-medium text-slate-500">/mo</span></p>
-        <p class="text-slate-500">+ £1,995 setup</p>
-        <ul class="mt-6 space-y-2 text-sm text-slate-700">
-          <li>• Website chatbot</li>
-          <li>• SMS/email follow‑up</li>
-          <li>• Calendar integration</li>
-          <li>• Monthly reporting</li>
-        </ul>
-        <a href="#booking" class="mt-6 inline-block w-full text-center px-4 py-2 rounded-lg text-white" style="background:var(--bg)">Start with Starter</a>
-      </div>
-      <!-- Growth -->
-      <div class="p-6 rounded-2xl border-2 border-[var(--bg)] relative">
-        <span class="absolute -top-3 right-4 bg-[var(--bg)] text-white text-xs px-2 py-1 rounded">Popular</span>
-        <h3 class="font-semibold text-lg">Growth</h3>
-        <p class="mt-2 text-slate-600">Most teams choose this.</p>
-        <p class="mt-6 text-3xl font-bold">£995<span class="text-base font-medium text-slate-500">/mo</span></p>
-        <p class="text-slate-500">+ £3,495 setup</p>
-        <ul class="mt-6 space-y-2 text-sm text-slate-700">
-          <li>• Website + WhatsApp + Instagram</li>
-          <li>• Advanced lead qualification</li>
-          <li>• Review automation</li>
-          <li>• Monthly optimisation call</li>
-        </ul>
-        <a href="#booking" class="mt-6 inline-block w-full text-center px-4 py-2 rounded-lg text-white" style="background:var(--bg)">Scale with Growth</a>
-      </div>
-      <!-- Dominate -->
-      <div class="p-6 rounded-2xl border border-slate-200">
-        <h3 class="font-semibold text-lg">Dominate</h3>
-        <p class="mt-2 text-slate-600">For multi‑location teams.</p>
-        <p class="mt-6 text-3xl font-bold">£1,995<span class="text-base font-medium text-slate-500">/mo</span></p>
-        <p class="text-slate-500">+ £5,495 setup</p>
-        <ul class="mt-6 space-y-2 text-sm text-slate-700">
-          <li>• All channels + Facebook/IG DMs</li>
-          <li>• Custom CRM pipelines</li>
-          <li>• A/B tested scripts & promos</li>
-          <li>• Priority support</li>
-        </ul>
-        <a href="#booking" class="mt-6 inline-block w-full text-center px-4 py-2 rounded-lg text-white" style="background:var(--bg)">Dominate your market</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Demo -->
-  <section id="demo" class="bg-slate-50">
+  <!-- Booking Section -->
+  <section id="booking" class="bg-slate-50">
     <div class="max-w-6xl mx-auto px-4 py-16">
-      <h2 class="text-3xl md:text-4xl font-bold">See a live demo</h2>
-      <p class="mt-3 text-slate-600 max-w-2xl">Try the example bot below. Ask a question and book a slot — it takes ~20 seconds.</p>
-      <div class="mt-8 rounded-2xl bg-white border border-slate-200 p-6">
-        <!-- Replace with your widget embed (e.g., Tidio/ManyChat) -->
-        <div class="aspect-[16/9] w-full rounded-xl border border-dashed border-slate-300 grid place-items-center text-slate-500">
-          <p>Embed your chatbot widget here</p>
+      <h2 class="text-3xl md:text-4xl font-bold">Book your free strategy call</h2>
+      <p class="mt-3 text-slate-600 max-w-2xl">
+        Pick a time that suits you. We’ll review your lead flow and map quick-win automations.
+      </p>
+
+      <div class="mt-8 rounded-2xl bg-white border border-slate-200 p-4 md:p-6">
+        <!-- Calendly inline widget begin -->
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/hello-teko/30min?background_color=085445&text_color=ffffff&primary_color=eadbc8"
+          style="min-width:320px;height:700px;">
         </div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
       </div>
     </div>
   </section>
 
-  <!-- Contact / Book -->
-  <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
-    <div class="grid md:grid-cols-2 gap-10 items-start">
-      <div>
-        <h2 class="text-3xl md:text-4xl font-bold">Book a free demo</h2>
-        <p class="mt-3 text-slate-600">Choose a time that suits you. We'll audit your lead flow, show the system live, and highlight easy wins.</p>
-        <a id="booking" href="#" class="mt-6 inline-block px-5 py-3 rounded-xl text-slate-900 font-semibold" style="background:var(--accent)">Open Calendly</a>
-        <p class="mt-3 text-sm text-slate-500">Prefer email? <a class="underline" href="mailto:hello@teko.tools">hello@teko.tools</a></p>
-      </div>
-      <div>
-        <form action="https://formspree.io/f/your-id" method="POST" class="p-6 rounded-2xl border border-slate-200">
-          <label class="block text-sm font-medium">Name
-            <input name="name" required class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
-          </label>
-          <label class="block text-sm font-medium mt-4">Email
-            <input name="email" type="email" required class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
-          </label>
-          <label class="block text-sm font-medium mt-4">Company
-            <input name="company" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2" />
-          </label>
-          <label class="block text-sm font-medium mt-4">What are you trying to improve?
-            <textarea name="message" rows="4" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2"></textarea>
-          </label>
-          <button class="mt-6 w-full px-4 py-2 rounded-lg text-white" style="background:var(--bg)">Send</button>
-          <p class="mt-2 text-xs text-slate-500">We’ll get back to you within one working day.</p>
-        </form>
-      </div>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-[#085445] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-3xl md:text-4xl font-bold">Get in Touch</h2>
+      <p class="mt-3 max-w-2xl">
+        Have questions? Reach out and we’ll respond promptly.
+      </p>
+      <a href="#booking" 
+         class="mt-6 inline-block px-5 py-3 rounded-xl font-semibold text-[#085445] bg-[#eadbc8] hover:bg-[#d6c4b5] transition">
+        Open Calendly
+      </a>
     </div>
   </section>
-<!-- Booking Section -->
-<section id="booking">
-  <!-- Calendly inline widget begin -->
-  <div
-    class="calendly-inline-widget"
-    data-url="<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/hello-teko/30min?background_color=085445&text_color=ffffff&primary_color=eadbc8" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->"
-    style="min-width:320px;height:700px;">
-  </div>
-  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  <!-- Calendly inline widget end -->
-</section>
-  <!-- Footer -->
-  <footer class="border-t border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-6 items-center">
-      <div class="flex items-center gap-2">
-        <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg" style="background:var(--bg)">
-          <svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5 text-[var(--accent)]"><path fill="currentColor" d="M5 6h14a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2Zm7 14a1 1 0 0 0 1-1V8h6a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2h6v11a1 1 0 0 0 1 1Z"/></svg>
-        </span>
-        <span class="font-semibold">Teko</span>
-      </div>
-      <div class="text-sm text-slate-500 md:text-right">© <span id="y"></span> Teko. All rights reserved. • <a class="underline" href="#">Privacy</a></div>
-    </div>
+
+  <footer class="bg-slate-900 text-slate-300 text-center py-6">
+    <p>© 2025 Teko Tools. All rights reserved.</p>
   </footer>
 
-  <!-- Cookie notice (minimal) -->
-  <div id="cookie" class="fixed bottom-4 left-1/2 -translate-x-1/2 w-[95%] sm:w-auto max-w-xl bg-white border border-slate-200 rounded-xl p-4 shadow-soft hidden">
-    <p class="text-sm text-slate-700">We use cookies for basic analytics. <a href="#" class="underline">Learn more</a>.</p>
-    <div class="mt-3 flex gap-3">
-      <button onclick="dismissCookie()" class="px-3 py-2 rounded-lg text-white" style="background:var(--bg)">Got it</button>
-      <button onclick="dismissCookie()" class="px-3 py-2 rounded-lg border border-slate-200">No thanks</button>
-    </div>
-  </div>
-
-  <script>
-    // Year
-    document.getElementById('y').textContent = new Date().getFullYear();
-    // Cookie banner
-    const key = 'teko-cookie';
-    function dismissCookie(){ localStorage.setItem(key,'1'); document.getElementById('cookie').classList.add('hidden'); }
-    if(!localStorage.getItem(key)){
-      setTimeout(()=>document.getElementById('cookie').classList.remove('hidden'), 800);
-    }
-  </script>
 </body>
 </html>
